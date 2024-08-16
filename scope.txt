@@ -1,0 +1,9 @@
+./src/Cred.sol
+./src/PhiFactory.sol
+./src/abstract/Claimable.sol
+./src/abstract/CreatorRoyaltiesControl.sol
+./src/abstract/RewardControl.sol
+./src/art/PhiNFT1155.sol
+./src/curve/BondingCurve.sol
+./src/reward/CuratorRewardsDistributor.sol
+./src/reward/PhiRewards.sol

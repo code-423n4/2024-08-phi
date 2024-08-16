@@ -1,0 +1,45 @@
+{
+  "name": "@ZaK3939/phi-protocol",
+  "description": "",
+  "version": "1.0.0",
+  "author": {
+    "name": "ZaK3939",
+    "url": "https://github.com/ZaK3939"
+  },
+  "dependencies": {
+    "@defi-wonderland/natspec-smells": "^1.0.3",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/merkle-tree": "^1.0.6",
+    "fs": "^0.0.1-security",
+    "prettier-plugin-solidity": "^1.3.1",
+    "viem": "^2.13.8"
+  },
+  "devDependencies": {
+    "@prb/test": "^0.6.4",
+    "forge-std": "github:foundry-rs/forge-std#v1",
+    "prettier": "^3.0.0",
+    "solhint": "^3.6.2"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "forge",
+    "foundry",
+    "smart-contracts",
+    "solidity",
+    "template"
+  ],
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf cache out",
+    "build": "forge build",
+    "lint": "bun run lint:sol && bun run prettier:check",
+    "lint:sol": "forge fmt --check && bun solhint {script,src}/**/*.sol && bun solhint {script,src}/*.sol",
+    "prettier:check": "prettier --check **/*.{json,md,yml} --ignore-path=.prettierignore",
+    "prettier:write": "prettier --write **/*.{json,md,yml} --ignore-path=.prettierignore",
+    "test": "forge test",
+    "test:coverage": "forge coverage",
+    "test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage",
+    "natspec": "natspec-smells"
+  }
+}

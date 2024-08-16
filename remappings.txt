@@ -1,0 +1,6 @@
+@prb/test/=node_modules/@prb/test/
+forge-std/=lib/forge-std/src/
+solady/=lib/solady/src/
+foundry-devops/=lib/foundry-devops/src/
+@openzeppelin/contracts/=lib/openzeppelin-contracts-upgradeable/lib/openzeppelin-contracts/contracts/
+@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
