@@ -89,7 +89,7 @@ contract CuratorRewardsDistributor is Logo, Ownable2Step, ICuratorRewardsDistrib
         }
 
         if (totalNum == 0) {
-            revert NoSignalsToDistribute();
+            revert NoSharesToDistribute();
         }
 
         uint256[] memory amounts = new uint256[](distributeAddresses.length);
@@ -124,6 +124,8 @@ contract CuratorRewardsDistributor is Logo, Ownable2Step, ICuratorRewardsDistrib
             distributeAddresses, amounts, reasons, "deposit from curator rewards distributor"
         );
 
-        emit RewardsDistributed(credId, msg.sender, royaltyfee, distributeAmount, totalBalance);
+        emit RewardsDistributed(
+            credId, _msgSender(), royaltyfee + distributeAmount - actualDistributeAmount, distributeAmount, totalBalance
+        );
     }
 }

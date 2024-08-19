@@ -10,11 +10,11 @@
 
 - Credential Creator Credential Creators can suggest/create an Onchain credential by indexing blockchain data.
 
-- Curator Curators show support for specific credentials by buying or selling Signals. Purchasing Signals helps the
+- Curator Curators show support for specific credentials by buying or selling Shares. Purchasing Shares helps the
   protocol understand which credentials are in higher demand. This is defined by the bonding curve for each Credential
-  along with how early the Curator bought their signal.
+  along with how early the Curator bought their share.
 
-  Curators also earn a portion of mint fees for the credentials they signal.
+  Curators also earn a portion of mint fees for the credentials
 
 - Verifier Verifier's help create the logical criteria to verify that the Minter is eligible to claim a credential by
   querying the user's onchain data. Verifier's achieve this by creating the backend validation logic and hosting this

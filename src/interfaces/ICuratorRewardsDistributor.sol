@@ -7,7 +7,7 @@ interface ICuratorRewardsDistributor {
     //////////////////////////////////////////////////////////////*/
     error InvalidAddressZero();
     error NoBalanceToDistribute();
-    error NoSignalsToDistribute();
+    error NoSharesToDistribute();
     error InvalidTokenAmounts(uint256 gotAmounts);
     error InvalidValue(uint256 gotValue, uint256 expectedValue);
     error UnauthorizedCaller(address caller);
