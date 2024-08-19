@@ -53,7 +53,6 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 The 4naly3er report can be found [here](https://github.com/code-423n4/2024-08-phi/blob/main/4naly3er-report.md).
 
 _Note for C4 wardens: Anything included in this `Automated Findings / Publicly Known Issues` section is considered a publicly known issue and is ineligible for awards._
-## 🐺 C4 team: paste this into the bottom of the sponsor's audit repo `README`, then delete this line
 
 1. updateArtSettings allows setting the startTime to a past timestamp, potentially opening the minting window earlier than intended
 2. Setting sellRoyalty higher than buyRoyalty may reduce market demand possibly leading to decreased liquidity
