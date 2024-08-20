@@ -45,8 +45,8 @@ Claimable.sol
 
 Using the ContributeRewards contract, additional rewards can be set for credentials.
 
-1. Call the `setRewardInfo` function, specifying the credential ID, reward information (claim deadline, Merkle root,
-   reward tokens, etc.).
+1. Call the `setRewardInfo` function, specifying the cred ID, reward information (claim deadline, Merkle root, reward
+   tokens, etc.).
 2. Users can call the `claimReward` function, providing the Merkle proof to claim rewards.
 
 ## shareing (Curating) and Curator Rewards
@@ -70,7 +70,7 @@ The Cred, PhiFactory, and PhiNFT1155 contracts use the UUPS upgradeability patte
 
 ## Base Fee
 
-- NFTs can be minted for 0.00055ETH.
+- NFTs can be minted for 0.00030ETH.
 - There is no protocol fee paid to the Phi Protocol when creating an NFT.
 
 ## Minting Conditions
@@ -87,7 +87,7 @@ has a different Verifier address:
 
 ### signature creation flow ![Sequence Diagram](./ClaimSigSequence.png)
 
-flow⭐️ https://gist.github.com/ZaK3939/f4b17335ec03fb0af57c26627885ca16
+signature verify flow⭐️ https://gist.github.com/ZaK3939/f4b17335ec03fb0af57c26627885ca16
 
 ## Basic vs Advanced
 
@@ -97,7 +97,7 @@ or some other message against the requirements.
 
 ## Mint Fee
 
-In addition to the base cost of 0.00055ETH, a paid mint fee can be set. The entire amount of this paid mint fee is
+In addition to the base cost of 0.00030ETH, a paid mint fee can be set. The entire amount of this paid mint fee is
 received by the artist.
 
 ## Reward Distribution Scenarios
