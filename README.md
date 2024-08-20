@@ -150,7 +150,7 @@ Gas Efficiency: Verify that the contract performs optimally without unnecessary 
 ```bash
 git clone --recurse https://github.com/code-423n4/2024-08-phi.git
 git 2024-08-phi
-$ bun install
+bun install
 forge test -vvv
 ```
 
