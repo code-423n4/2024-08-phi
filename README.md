@@ -49,12 +49,12 @@ verification process, and mint onchain credential contents.
 
 | Question                                | Answer                                                                  |
 | --------------------------------------- | ----------------------------------------------------------------------- |
-| ERC20 used by the protocol              | Any                                                                    |
+| ERC20 used by the protocol              | None                                                                    |
 | Test coverage                           | 55% |
 | ERC721 used by the protocol             | None                                                                     |
 | ERC777 used by the protocol             | None                                                                     |
 | ERC1155 used by the protocol            | Any                                                                      |
-| Chains the protocol will be deployed on | Base,Other,OptimismBera Chain, and Other EVM chain                      |
+| Chains the protocol will be deployed on | Base, Other, Optimism, BeraChain, and Other EVM chain                      |
 
 ### ERC20 token behaviors in scope
 
@@ -88,14 +88,9 @@ verification process, and mint onchain credential contents.
 
 ### EIP compliance checklist
 
-ERC1155
-
-✅ SCOUTS: Please format the response above 👆 using the template below👇
-
 | Question      | Answer        |
 | ------------- | ------------- |
-| src/Token.sol | ERC20, ERC721 |
-| src/NFT.sol   | ERC721        |
+| src/art/PhiNFT1155.sol   | ERC1155        |
 
 # Additional context
 
@@ -108,9 +103,9 @@ ERC1155
 
 1. Security: Identify and mitigate vulnerabilities to prevent exploits and attacks.
 
-2.a Function Reliability: Ensure the contract behaves consistently under various conditions.
+2.a. Function Reliability: Ensure the contract behaves consistently under various conditions.
 
-2.b Function Correctness: Ensure the smart contract logic correctly implements the intended functionality without
+2.b. Function Correctness: Ensure the smart contract logic correctly implements the intended functionality without
 errors.
 
 3. Gas Efficiency
