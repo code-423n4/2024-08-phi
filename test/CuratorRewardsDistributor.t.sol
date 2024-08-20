@@ -101,7 +101,7 @@ contract CuratorRewardsDistributorTest is Settings {
         curatorRewardsDistributor.distribute(credId);
     }
 
-    function testDistributeNoSignals() public {
+    function testDistributeNoShares() public {
         uint256 credId = 1;
         vm.prank(owner);
 
@@ -112,7 +112,7 @@ contract CuratorRewardsDistributorTest is Settings {
         // Deposit some ETH to the curatorRewardsDistributor
         curatorRewardsDistributor.deposit{ value: depositAmount }(credId, depositAmount);
 
-        vm.expectRevert(ICuratorRewardsDistributor.NoSignalsToDistribute.selector);
+        vm.expectRevert(ICuratorRewardsDistributor.NoSharesToDistribute.selector);
         curatorRewardsDistributor.distribute(credId);
     }
 }

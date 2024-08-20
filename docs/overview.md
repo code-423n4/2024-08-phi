@@ -2,9 +2,9 @@
 
 ## Overview
 
-Phi Protocol is a protocol for issuing and managing credentials on-chain and issuing NFTs linked to those credentials.
-Credential creators define credentials by setting conditions, and users can obtain NFTs by meeting those conditions.
-Additionally, rewards can be set for credentials. Also, we are also developing mint dapps based on this protocol layer.
+Phi Protocol is a protocol for issuing and managing credentials on-chain and issuing NFTs linked to those creds. Cred
+creators define creds by setting conditions, and users can obtain NFTs by meeting those conditions. Also, we are also
+developing mint dapps based on this protocol layer.
 
 ## Architecture
 
@@ -105,36 +105,36 @@ received by the artist.
 ### 5.1 Free Mint without Referral
 
 - Artist Reward: 0.00015ETH
-- Verifier Reward: 0.0001ETH
-- Curator Reward: 0.0001ETH
-- Phi Protocol Fee: 0.0002ETH
-- Total: 0.00055ETH
+- Verifier Reward: 0.00005ETH
+- Curator Reward: 0.00005ETH
+- Phi Protocol Fee: 0.00005ETH
+- Total: 0.00030ETH
 
 ### Free Mint with Referral
 
 - Artist Reward: 0.0001ETH
 - Mint Referral Reward: 0.00005ETH
-- Verifier Reward: 0.0001ETH
-- Curator Reward: 0.0001ETH
-- Phi Protocol Fee: 0.0002ETH
-- Total: 0.00055ETH
+- Verifier Reward: 0.00005ETH
+- Curator Reward: 0.00005ETH
+- Phi Protocol Fee: 0.00005ETH
+- Total: 0.00030ETH
 
 ### Paid Mint without Referral
 
 - Artist Reward: paid fee + 0.00015ETH
-- Verifier Reward: 0.0001ETH
-- Curator Reward: 0.0001ETH
-- Phi Protocol Fee: 0.0002ETH
-- Total: 0.00055ETH
+- Verifier Reward: 0.00005ETH
+- Curator Reward: 0.00005ETH
+- Phi Protocol Fee: 0.00005ETH
+- Total: 0.00030ETH
 
 ### Paid Mint with Referral
 
 - Artist Reward: paid fee + 0.0001ETH
 - Mint Referral Reward: 0.00005ETH
-- Verifier Reward: 0.0001ETH
-- Curator Reward: 0.0001ETH
-- Phi Protocol Fee: 0.0002ETH
-- Total: 0.00055ETH
+- Verifier Reward: 0.00005ETH
+- Curator Reward: 0.00005ETH
+- Phi Protocol Fee: 0.00005ETH
+- Total: 0.00030ETH
 
 ### 5.2 Cred and NFT Contract Compatibility
 
