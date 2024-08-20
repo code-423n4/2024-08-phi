@@ -19,18 +19,18 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 ## ⭐️ Sponsor: Add code to this repo
 
-- [ ] Create a PR to this repo with the below changes:
-- [ ] Confirm that this repo is a self-contained repository with working commands that will build (at least) all
+- [x] Create a PR to this repo with the below changes:
+- [x] Confirm that this repo is a self-contained repository with working commands that will build (at least) all
       in-scope contracts, and commands that will run tests producing gas reports for the relevant contracts.
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 48 business
+- [x] Please have final versions of contracts and documentation added/updated in this repo **no less than 48 business
       hours prior to audit start time.**
-- [ ] Be prepared for a 🚨code freeze🚨 for the duration of the audit — important because it establishes a level playing
+- [x] Be prepared for a 🚨code freeze🚨 for the duration of the audit — important because it establishes a level playing
       field. We want to ensure everyone's looking at the same code, no matter when they look during the audit. (Note:
       this includes your own repo, since a PR can leak alpha to our wardens!)
 
 ## ⭐️ Sponsor: Repo checklist
 
-- [ ] Modify the [Overview](#overview) section of this `README.md` file. Describe how your code is supposed to work with
+- [x] Modify the [Overview](#overview) section of this `README.md` file. Describe how your code is supposed to work with
       links to any relevent documentation and any other criteria/details that the auditors should keep in mind when
       reviewing. (Here are two well-constructed examples: [Ajna Protocol](https://github.com/code-423n4/2023-05-ajna)
       and [Maia DAO Ecosystem](https://github.com/code-423n4/2023-05-maia))
