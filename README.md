@@ -159,6 +159,10 @@ $ bun install
 forge test -vvv
 ```
 
+- `forge coverage`'s output:
+
+![](https://github.com/user-attachments/assets/7c6dd577-db24-457c-a635-bf37476942cd)
+
 # Scope
 
 _See [scope.txt](https://github.com/code-423n4/2024-08-phi/blob/main/scope.txt)_
