@@ -1,0 +1,188 @@
+INFO:Detectors:
+Reentrancy in Cred._createCredInternal(address,string,string,string,address,uint16,uint16) (src/Cred.sol#544-577):
+	External calls:
+	- buyShareCred(credIdCounter,1,0) (src/Cred.sol#570)
+		- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	State variables written after the call(s):
+	- credIdCounter += 1 (src/Cred.sol#574)
+	Cred.credIdCounter (src/Cred.sol#36) can be used in cross function reentrancies:
+	- Cred._createCredInternal(address,string,string,string,address,uint16,uint16) (src/Cred.sol#544-577)
+	- Cred.credIdCounter (src/Cred.sol#36)
+	- Cred.initialize(address,address,address,uint256,address,address) (src/Cred.sol#69-93)
+Reentrancy in Cred._handleTrade(uint256,uint256,bool,address,uint256) (src/Cred.sol#588-659):
+	External calls:
+	- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	State variables written after the call(s):
+	- cred.latestActiveTimestamp = block.timestamp (src/Cred.sol#656)
+	Cred.creds (src/Cred.sol#44) can be used in cross function reentrancies:
+	- Cred._createCredInternal(address,string,string,string,address,uint16,uint16) (src/Cred.sol#544-577)
+	- Cred._executeBatchTrade(uint256[],uint256[],address,uint256[],uint256[],uint256[],bool) (src/Cred.sol#734-783)
+	- Cred._handleTrade(uint256,uint256,bool,address,uint256) (src/Cred.sol#588-659)
+	- Cred._validateAndCalculateBatch(uint256[],uint256[],uint256[],bool) (src/Cred.sol#810-883)
+	- Cred.credInfo(uint256) (src/Cred.sol#407-409)
+	- Cred.getBatchBuyPrice(uint256[],uint256[]) (src/Cred.sol#343-358)
+	- Cred.getBatchSellPrice(uint256[],uint256[]) (src/Cred.sol#364-379)
+	- Cred.getCreatorRoyalty(uint256) (src/Cred.sol#399-402)
+	- Cred.getCredBuyPrice(uint256,uint256) (src/Cred.sol#319-321)
+	- Cred.getCredBuyPriceWithFee(uint256,uint256) (src/Cred.sol#327-331)
+	- Cred.getCredCreator(uint256) (src/Cred.sol#391-393)
+	- Cred.getCredSellPrice(uint256,uint256) (src/Cred.sol#323-325)
+	- Cred.getCredSellPriceWithFee(uint256,uint256) (src/Cred.sol#333-337)
+	- Cred.getCurrentSupply(uint256) (src/Cred.sol#395-397)
+	- Cred.isExist(uint256) (src/Cred.sol#387-389)
+	- Cred.updateCred(bytes,bytes,uint16,uint16) (src/Cred.sol#283-310)
+Reentrancy in PhiFactory.createArt(bytes,bytes,IPhiFactory.CreateConfig) (src/PhiFactory.sol#196-213):
+	External calls:
+	- artAddress = createERC1155Internal(artIdCounter,erc1155Data) (src/PhiFactory.sol#210)
+		- IPhiNFT1155Ownable(newArt).initialize(credChainId,credId,verificationType,protocolFeeDestination) (src/PhiFactory.sol#636)
+		- (success_,response) = existingArt.call{value: msg.value}(abi.encodeWithSignature(createArtFromFactory(uint256),newArtId)) (src/PhiFactory.sol#663-664)
+		- (success_,response) = newArt.call{value: msg.value}(abi.encodeWithSignature(createArtFromFactory(uint256),newArtId)) (src/PhiFactory.sol#640-641)
+	External calls sending eth:
+	- artAddress = createERC1155Internal(artIdCounter,erc1155Data) (src/PhiFactory.sol#210)
+		- (success_,response) = existingArt.call{value: msg.value}(abi.encodeWithSignature(createArtFromFactory(uint256),newArtId)) (src/PhiFactory.sol#663-664)
+		- (success_,response) = newArt.call{value: msg.value}(abi.encodeWithSignature(createArtFromFactory(uint256),newArtId)) (src/PhiFactory.sol#640-641)
+	State variables written after the call(s):
+	- artIdCounter ++ (src/PhiFactory.sol#211)
+	PhiFactory.artIdCounter (src/PhiFactory.sol#41) can be used in cross function reentrancies:
+	- PhiFactory.artIdCounter (src/PhiFactory.sol#41)
+	- PhiFactory.initialize(address,address,address,address,address,uint256,uint256) (src/PhiFactory.sol#127-153)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+INFO:Detectors:
+Cred.isShareHolder(uint256,address) (src/Cred.sol#418-421) ignores return value by (None,amounts) = shareBalance[credId_].tryGet(curator_) (src/Cred.sol#419)
+Cred._handleTrade(uint256,uint256,bool,address,uint256) (src/Cred.sol#588-659) ignores return value by (None,nums) = shareBalance[credId_].tryGet(curator_) (src/Cred.sol#630)
+Cred._updateCuratorShareBalance(uint256,address,uint256,bool) (src/Cred.sol#666-682) ignores return value by (None,currentNum) = shareBalance[credId_].tryGet(sender_) (src/Cred.sol#667)
+Cred._updateCuratorShareBalance(uint256,address,uint256,bool) (src/Cred.sol#666-682) ignores return value by shareBalance[credId_].set(sender_,currentNum + amount_) (src/Cred.sol#674)
+Cred._updateCuratorShareBalance(uint256,address,uint256,bool) (src/Cred.sol#666-682) ignores return value by shareBalance[credId_].set(sender_,currentNum - amount_) (src/Cred.sol#680)
+Cred._validateAndCalculateBatch(uint256[],uint256[],uint256[],bool) (src/Cred.sol#810-883) ignores return value by (None,num) = shareBalance[credId].tryGet(_msgSender()) (src/Cred.sol#871)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#unused-return
+INFO:Detectors:
+IPhiFactory.setProtocolFeeDestination(address).protocolFeeDestination (src/interfaces/IPhiFactory.sol#191) shadows:
+	- IPhiFactory.protocolFeeDestination() (src/interfaces/IPhiFactory.sol#150) (function)
+IPhiNFT1155.initialize(uint256,uint256,string,address).credId (src/interfaces/IPhiNFT1155.sol#45) shadows:
+	- IPhiNFT1155.credId() (src/interfaces/IPhiNFT1155.sol#53) (function)
+IPhiNFT1155.initialize(uint256,uint256,string,address).verificationType (src/interfaces/IPhiNFT1155.sol#46) shadows:
+	- IPhiNFT1155.verificationType() (src/interfaces/IPhiNFT1155.sol#56) (function)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#local-variable-shadowing
+INFO:Detectors:
+Cred.initialize(address,address,address,uint256,address,address).phiSignerAddress_ (src/Cred.sol#70) lacks a zero-check on :
+		- phiSignerAddress = phiSignerAddress_ (src/Cred.sol#88)
+Cred.initialize(address,address,address,uint256,address,address).phiRewardsAddress_ (src/Cred.sol#75) lacks a zero-check on :
+		- phiRewardsAddress = phiRewardsAddress_ (src/Cred.sol#90)
+PhiFactory.initialize(address,address,address,address,address,uint256,uint256).phiSignerAddress_ (src/PhiFactory.sol#128) lacks a zero-check on :
+		- phiSignerAddress = phiSignerAddress_ (src/PhiFactory.sol#149)
+PhiFactory.initialize(address,address,address,address,address,uint256,uint256).protocolFeeDestination_ (src/PhiFactory.sol#129) lacks a zero-check on :
+		- protocolFeeDestination = protocolFeeDestination_ (src/PhiFactory.sol#150)
+PhiFactory.initialize(address,address,address,address,address,uint256,uint256).erc1155ArtAddress_ (src/PhiFactory.sol#130) lacks a zero-check on :
+		- erc1155ArtAddress = erc1155ArtAddress_ (src/PhiFactory.sol#151)
+PhiFactory.initialize(address,address,address,address,address,uint256,uint256).phiRewardsAddress_ (src/PhiFactory.sol#131) lacks a zero-check on :
+		- phiRewardsAddress = phiRewardsAddress_ (src/PhiFactory.sol#152)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+INFO:Detectors:
+Cred.getBatchBuyPrice(uint256[],uint256[]) (src/Cred.sol#343-358) has external calls inside a loop: total += IBondingCurve(creds[credIds_[i]].bondingCurve).getBuyPriceAfterFee(credIds_[i],creds[credIds_[i]].currentSupply,amounts_[i]) (src/Cred.sol#353-355)
+Cred.getBatchSellPrice(uint256[],uint256[]) (src/Cred.sol#364-379) has external calls inside a loop: total += IBondingCurve(creds[credIds_[i]].bondingCurve).getSellPriceAfterFee(credIds_[i],creds[credIds_[i]].currentSupply,amounts_[i]) (src/Cred.sol#374-376)
+PhiFactory.batchClaim(bytes[],uint256[]) (src/PhiFactory.sol#308-321) has external calls inside a loop: this.claim{value: ethValue_[i_scope_0]}(encodeDatas_[i_scope_0]) (src/PhiFactory.sol#319)
+PhiFactory.getArtMintFee(uint256,uint256) (src/PhiFactory.sol#509-512) has external calls inside a loop: IPhiRewards(phiRewardsAddress).computeMintReward(quantity_,arts[artId_].mintFee) + quantity_ * mintProtocolFee (src/PhiFactory.sol#510-511)
+PhiNFT1155.soulBounded(uint256) (src/art/PhiNFT1155.sol#271-273) has external calls inside a loop: phiFactoryContract.artData(_tokenIdToArtId[tokenId_]).soulBounded (src/art/PhiNFT1155.sol#272)
+CuratorRewardsDistributor.distribute(uint256) (src/reward/CuratorRewardsDistributor.sol#77-130) has external calls inside a loop: totalNum += credContract.getShareNumber(credId,distributeAddresses[i]) (src/reward/CuratorRewardsDistributor.sol#88)
+CuratorRewardsDistributor.distribute(uint256) (src/reward/CuratorRewardsDistributor.sol#77-130) has external calls inside a loop: userAmounts = credContract.getShareNumber(credId,user) (src/reward/CuratorRewardsDistributor.sol#109)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation/#calls-inside-a-loop
+INFO:Detectors:
+Reentrancy in PhiFactory._createNewNFTContract(IPhiFactory.PhiArt,uint256,IPhiFactory.ERC1155Data,uint256,uint256,string) (src/PhiFactory.sol#620-649):
+	External calls:
+	- IPhiNFT1155Ownable(newArt).initialize(credChainId,credId,verificationType,protocolFeeDestination) (src/PhiFactory.sol#636)
+	State variables written after the call(s):
+	- credNFTContracts[credChainId][credId] = address(newArt) (src/PhiFactory.sol#638)
+Reentrancy in Cred.createCred(address,bytes,bytes,uint16,uint16) (src/Cred.sol#232-280):
+	External calls:
+	- credId = _createCredInternal(creator_,credURL,credType,verificationType,bondingCurve,buyShareRoyalty_,sellShareRoyalty_) (src/Cred.sol#273-275)
+		- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	State variables written after the call(s):
+	- credsMerkeRoot[credId] = merkleRoot_ (src/Cred.sol#277)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+INFO:Detectors:
+Reentrancy in Cred._createCredInternal(address,string,string,string,address,uint16,uint16) (src/Cred.sol#544-577):
+	External calls:
+	- buyShareCred(credIdCounter,1,0) (src/Cred.sol#570)
+		- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	Event emitted after the call(s):
+	- CredCreated(creator_,credIdCounter,credURL_,credType_,verificationType_) (src/Cred.sol#572)
+Reentrancy in Cred._handleTrade(uint256,uint256,bool,address,uint256) (src/Cred.sol#588-659):
+	External calls:
+	- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	Event emitted after the call(s):
+	- Royalty(creator,credId_,creatorFee) (src/Cred.sol#654)
+	- Trade(curator_,credId_,isBuy,amount_,price,protocolFee,cred.currentSupply) (src/Cred.sol#658)
+Reentrancy in Cred.createCred(address,bytes,bytes,uint16,uint16) (src/Cred.sol#232-280):
+	External calls:
+	- credId = _createCredInternal(creator_,credURL,credType,verificationType,bondingCurve,buyShareRoyalty_,sellShareRoyalty_) (src/Cred.sol#273-275)
+		- IPhiRewards(phiRewardsAddress).deposit{value: creatorFee}(creator,bytes4(keccak256(bytes)(CREATOR_ROYALTY_FEE)),) (src/Cred.sol#651-653)
+	Event emitted after the call(s):
+	- MerkleTreeSetUp(_msgSender(),credId,merkleRoot_) (src/Cred.sol#278)
+Reentrancy in PhiRewards.depositRewards(uint256,uint256,bytes,uint256,uint256,uint256,uint256,bool) (src/reward/PhiRewards.sol#78-121):
+	External calls:
+	- curatorRewardsDistributor.deposit{value: curateTotalReward_}(credId_,curateTotalReward_) (src/reward/PhiRewards.sol#110)
+	Event emitted after the call(s):
+	- RewardsDeposit(credData,minter_,receiver_,referral_,verifier_,rewardsData) (src/reward/PhiRewards.sol#120)
+Reentrancy in CuratorRewardsDistributor.distribute(uint256) (src/reward/CuratorRewardsDistributor.sol#77-130):
+	External calls:
+	- phiRewardsContract.depositBatch{value: actualDistributeAmount}(distributeAddresses,amounts,reasons,deposit from curator rewards distributor) (src/reward/CuratorRewardsDistributor.sol#123-125)
+	Event emitted after the call(s):
+	- RewardsDistributed(credId,_msgSender(),royaltyfee + distributeAmount - actualDistributeAmount,distributeAmount,totalBalance) (src/reward/CuratorRewardsDistributor.sol#127-129)
+Reentrancy in PhiFactory.merkleClaim(bytes32[],bytes,IPhiFactory.MintArgs,bytes32) (src/PhiFactory.sol#352-383):
+	External calls:
+	- _processClaim(artId_,minter_,ref_,art.credCreator,mintArgs_.quantity,leafPart_,mintArgs_.imageURI,msg.value) (src/PhiFactory.sol#378-380)
+		- (success_,None) = art.artAddress.call{value: mintFee - mintProtocolFee * quantity_}(abi.encodeWithSignature(claimFromFactory(uint256,address,address,address,uint256,bytes32,string),artId_,minter_,ref_,verifier_,quantity_,data_,imageURI_)) (src/PhiFactory.sol#744-755)
+	Event emitted after the call(s):
+	- ArtClaimedData(artId_,MERKLE,minter_,ref_,art.credCreator,art.artAddress,mintArgs_.quantity) (src/PhiFactory.sol#382)
+Reentrancy in PhiFactory.signatureClaim(bytes,bytes,IPhiFactory.MintArgs) (src/PhiFactory.sol#327-346):
+	External calls:
+	- _processClaim(artId_,minter_,ref_,verifier_,mintArgs_.quantity,data_,mintArgs_.imageURI,msg.value) (src/PhiFactory.sol#343)
+		- (success_,None) = art.artAddress.call{value: mintFee - mintProtocolFee * quantity_}(abi.encodeWithSignature(claimFromFactory(uint256,address,address,address,uint256,bytes32,string),artId_,minter_,ref_,verifier_,quantity_,data_,imageURI_)) (src/PhiFactory.sol#744-755)
+	Event emitted after the call(s):
+	- ArtClaimedData(artId_,SIGNATURE,minter_,ref_,verifier_,arts[artId_].artAddress,mintArgs_.quantity) (src/PhiFactory.sol#345)
+Reentrancy in PhiFactory.updateArtSettings(uint256,string,address,uint256,uint256,uint256,uint256,bool,ICreatorRoyaltiesControl.RoyaltyConfiguration) (src/PhiFactory.sol#215-257):
+	External calls:
+	- IPhiNFT1155Ownable(art.artAddress).updateRoyalties(tokenId,configuration) (src/PhiFactory.sol#255)
+	Event emitted after the call(s):
+	- ArtUpdated(artId_,url_,receiver_,maxSupply_,mintFee_,startTime_,endTime_,soulBounded_) (src/PhiFactory.sol#256)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-3
+INFO:Detectors:
+Cred.createCred(address,bytes,bytes,uint16,uint16) (src/Cred.sol#232-280) uses timestamp for comparisons
+	Dangerous comparisons:
+	- expiresIn <= block.timestamp (src/Cred.sol#254)
+Cred.updateCred(bytes,bytes,uint16,uint16) (src/Cred.sol#283-310) uses timestamp for comparisons
+	Dangerous comparisons:
+	- expiresIn_ <= block.timestamp (src/Cred.sol#295)
+Cred.isExist(uint256) (src/Cred.sol#387-389) uses timestamp for comparisons
+	Dangerous comparisons:
+	- creds[credId_].creator != address(0) (src/Cred.sol#388)
+Cred._handleTrade(uint256,uint256,bool,address,uint256) (src/Cred.sol#588-659) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp <= lastTradeTimestamp[credId_][curator_] + SHARE_LOCK_PERIOD (src/Cred.sol#625)
+Cred._executeBatchTrade(uint256[],uint256[],address,uint256[],uint256[],uint256[],bool) (src/Cred.sol#734-783) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp <= lastTradeTimestamp[credId][curator] + SHARE_LOCK_PERIOD (src/Cred.sol#761)
+PhiFactory.updateArtSettings(uint256,string,address,uint256,uint256,uint256,uint256,bool,ICreatorRoyaltiesControl.RoyaltyConfiguration) (src/PhiFactory.sol#215-257) uses timestamp for comparisons
+	Dangerous comparisons:
+	- endTime_ < block.timestamp (src/PhiFactory.sol#236)
+PhiFactory.signatureClaim(bytes,bytes,IPhiFactory.MintArgs) (src/PhiFactory.sol#327-346) uses timestamp for comparisons
+	Dangerous comparisons:
+	- expiresIn_ <= block.timestamp (src/PhiFactory.sol#339)
+PhiFactory._validateArtCreation(IPhiFactory.ERC1155Data) (src/PhiFactory.sol#583-587) uses timestamp for comparisons
+	Dangerous comparisons:
+	- createData_.endTime <= block.timestamp (src/PhiFactory.sol#585)
+PhiFactory._validateArtCreationSignature(bytes,bytes) (src/PhiFactory.sol#589-593) uses timestamp for comparisons
+	Dangerous comparisons:
+	- expiresIn_ <= block.timestamp (src/PhiFactory.sol#592)
+PhiFactory._validateAndUpdateClaimState(uint256,address,uint256) (src/PhiFactory.sol#702-721) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp < art.startTime (src/PhiFactory.sol#710)
+	- block.timestamp > art.endTime (src/PhiFactory.sol#711)
+RewardControl.withdrawWithSig(address,address,uint256,uint256,bytes) (src/abstract/RewardControl.sol#100-109) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp > deadline (src/abstract/RewardControl.sol#101)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+INFO:Detectors:
+CuratorRewardsDistributor.credContract (src/reward/CuratorRewardsDistributor.sol#27) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+INFO:Slither:. analyzed (67 contracts with 73 detectors), 47 result(s) found
