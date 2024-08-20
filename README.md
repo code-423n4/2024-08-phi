@@ -25,9 +25,7 @@ publicly known issue and is ineligible for awards._
 5. creatorFee to be always zero when supply == 0
 6. Solady ECDSA.recover(), which does not reject malleable signature. For this issue, we use expiresIn
 7. The credMerkleRoot[credChainId][credId] stores the merkleRootHash, but there is no way to update the merkleRootHash.
-   8, OZ EnumerableMap is not gas efficiency
-
-✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
+8. OZ EnumerableMap is not gas efficiency
 
 # Overview
 
@@ -37,11 +35,11 @@ verification process, and mint onchain credential contents.
 
 ## Links
 
-- **Previous audits:** https://github.com/code-423n4/2024-08-phi/tree/main/docs/audit
-- **Documentation:** https://docs.philand.xyz/explore-phi
-- **Website:** https://phiprotocol.xyz/
-- **X/Twitter:** https://x.com/phi_xyz
-- **Discord:** https://discord.gg/phi
+- **Previous audits:** <https://github.com/code-423n4/2024-08-phi/tree/main/docs/audit>
+- **Documentation:** <https://docs.philand.xyz/explore-phi>
+- **Website:** <https://phiprotocol.xyz/>
+- **X/Twitter:** <https://x.com/phi_xyz>
+- **Discord:** <https://discord.gg/phi>
 
 ---
 
@@ -49,39 +47,13 @@ verification process, and mint onchain credential contents.
 
 ### General questions
 
-### Are there any ERC20's in scope?: Yes
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column
-with "None".
-
-Any (all possible ERC20s)
-
-### Are there any ERC777's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column
-with "None".
-
-### Are there any ERC721's in scope?: No
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column
-with "None".
-
-### Are there any ERC1155's in scope?: Yes
-
-✅ SCOUTS: If the answer above 👆 is "Yes", please add the tokens below 👇 to the table. Otherwise, update the column
-with "None".
-
-any
-
-✅ SCOUTS: Once done populating the table below, please remove all the Q/A data above.
-
 | Question                                | Answer                                                                  |
 | --------------------------------------- | ----------------------------------------------------------------------- |
-| ERC20 used by the protocol              | 🖊️                                                                      |
+| ERC20 used by the protocol              | Any                                                                    |
 | Test coverage                           | 55% |
-| ERC721 used by the protocol             | 🖊️                                                                      |
-| ERC777 used by the protocol             | 🖊️                                                                      |
-| ERC1155 used by the protocol            | 🖊️                                                                      |
+| ERC721 used by the protocol             | None                                                                     |
+| ERC777 used by the protocol             | None                                                                     |
+| ERC1155 used by the protocol            | Any                                                                      |
 | Chains the protocol will be deployed on | Base,Other,OptimismBera Chain, and Other EVM chain                      |
 
 ### ERC20 token behaviors in scope
@@ -106,7 +78,7 @@ any
 | [High decimals ( > 18)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#high-decimals)                                                              | In scope |
 | [Blocklists](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#tokens-with-blocklists)                                                                | In scope |
 
-### External integrations (e.g., Uniswap) behavior in scope:
+### External integrations (e.g., Uniswap) behavior in scope
 
 | Question                                                  | Answer |
 | --------------------------------------------------------- | ------ |
@@ -129,9 +101,8 @@ ERC1155
 
 ## Main invariants
 
-- Our demo for audit: https://base-sepolia.terminal.phiprotocol.xyz/ 
+- Our demo for audit: <https://base-sepolia.terminal.phiprotocol.xyz/>
 - Creating CREDs with identical conditions is possible, therefore buying up shares has little significance.
-
 
 ## Attack ideas (where to focus for bugs)
 
@@ -167,22 +138,19 @@ Gas Efficiency: Verify that the contract performs optimally without unnecessary 
 
 - Can the contract be optimized for gas efficiency, particularly in loops and storage access patterns?
 
-
 ## All trusted roles in the protocol
-
 
 | Role          | Description     |
 | ------------- | --------------- |
 | Owner         | Signature Signer|
 | [User Groups](https://docs.philand.xyz/explore-phi/phi-protocol/user-groups) | [Link to doc](https://docs.philand.xyz/explore-phi/phi-protocol/user-groups) |
 
-## Describe any novel or unique curve logic or mathematical models implemented in the contracts:
+## Describe any novel or unique curve logic or mathematical models implemented in the contracts
 
-- Docs: https://docs.philand.xyz/explore-phi/phi-protocol/phi-protocol-rewards/curator-reward
+- Docs: <https://docs.philand.xyz/explore-phi/phi-protocol/phi-protocol-rewards/curator-reward>
 - Also, You can check our Share price curve ([Google Doc](https://docs.google.com/spreadsheets/d/18wHi9Mqo9YU8EUMQuUvuC75Dav6NSY5LOw-iDlkrZEA/edit?pli=1&gid=859106557#gid=859106557))
 
 ## Running tests
-
 
 ```bash
 git clone --recurse https://github.com/code-423n4/2024-08-phi.git
@@ -190,7 +158,6 @@ git 2024-08-phi
 $ bun install
 forge test -vvv
 ```
-
 
 # Scope
 
