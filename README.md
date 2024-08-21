@@ -54,7 +54,7 @@ verification process, and mint onchain credential contents.
 | ERC721 used by the protocol             | None                                                                     |
 | ERC777 used by the protocol             | None                                                                     |
 | ERC1155 used by the protocol            | Any                                                                      |
-| Chains the protocol will be deployed on | Base, Other, Optimism, BeraChain, and Other EVM chain                      |
+| Chains the protocol will be deployed on | Base, Optimism, BeraChain, and Other EVM chain                      |
 
 ### ERC20 token behaviors in scope
 
@@ -150,6 +150,7 @@ Gas Efficiency: Verify that the contract performs optimally without unnecessary 
 ```bash
 git clone --recurse https://github.com/code-423n4/2024-08-phi.git
 git 2024-08-phi
+git submodule update --init --recursive
 bun install
 forge test -vvv
 ```
