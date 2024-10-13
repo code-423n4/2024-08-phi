@@ -1,0 +1,1463 @@
+==============================================================
+Guild: Code4rena
+Channel: ARCHIVE-PUBLIC / phi-aug22
+==============================================================
+
+[08/21/2024 15:55] kartoonjoy
+👋 Hello and welcome to the audit channel for the $30,000 in USDC **Phi** audit!
+
+📆 Audit opens 08/22/2024 20:00 (20:00 UTC) and runs through 09/03/2024 20:00 (20:00 UTC) (12 days).
+
+Please give a warm welcome to the Phi team, particularly @ZaK3939, @oji3, @Kashi and @shugo, who will be available for questions either here in the channel or via a PRIVATE thread in the GMT +4 to GMT +12 timezone(s). 
+
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any in any __thread (private or public)__ and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.  
+
+We'll be posting relevant links, documentation, etc. here, so if you intend to participate in this audit, consider enabling notifications for this channel. 🐺 ⏰
+
+Audit Page: https://code4rena.com/audits/2024-08-phi#top
+
+{Reactions}
+❤️ 
+
+[08/21/2024 15:59] pinchaschaim
+🥳
+
+
+[08/21/2024 15:59] rabtai
+This could be my first audit 🙂 been lurking here for a while
+
+{Reactions}
+🎉 (11) 🚀 (4) chad (2) 
+
+[08/21/2024 16:00] rabtai
+Welcome @ZaK3939 @oji3 @Kashi @shugo and thanks
+
+{Reactions}
+👏 ❤️ 
+
+[08/22/2024 20:03] nokcha75
+Starting my first audit today :code4rena:
+
+{Reactions}
+🔥 (12) chad (9) 
+
+[08/22/2024 20:42] mctoady
+"ERC20 used by the protocol: None"
+"ERC20 behaviours in scope: All of em"
+
+
+[08/22/2024 20:42] mctoady
+https://tenor.com/view/joe-biden-presidential-debate-huh-confused-gif-16704157274113773062
+
+{Embed}
+https://tenor.com/view/joe-biden-presidential-debate-huh-confused-gif-16704157274113773062
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/joe-biden-presidential-debate-66CDA.png
+
+{Reactions}
+😂 (30) 🙂 
+
+[08/23/2024 02:40] pro_king1
+As i have installed all dependencies but still i can't run forge build or any command related fto forge
+
+
+[08/23/2024 02:41] ritik2784
+do `npm i` as well if u dont have `bun`
+
+{Reactions}
+👍 
+
+[08/23/2024 03:05] naties29
+Good luck brother!
+
+{Reactions}
+❤️ 
+
+[08/23/2024 03:07] naties29
+Thank you sam!!!
+
+
+[08/23/2024 03:07] naties29
+Good luck yall
+
+{Reactions}
+❤️ 
+
+[08/23/2024 04:50] pro_king1
+Still facing the error after remmapings too
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/Screenshot_from_2024-08-23_09-19-23-AD679.png
+
+
+[08/23/2024 04:56] ritik2784
+remove remappings from `foundry.toml` file, then run `forge remappings > remappings.txt`
+
+
+[08/23/2024 05:01] pro_king1
+When I do npm i
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/Screenshot_from_2024-08-23_09-27-50-D85D8.png
+
+
+[08/23/2024 05:13] ritik2784
+Now do` forge test`
+
+
+[08/23/2024 05:14] pro_king1
+but i faces with some remapping issues i will try if it doesn't work than i will share eith you
+
+
+[08/23/2024 05:26] ritik2784
+Sure bro
+
+{Reactions}
+❤️ 
+
+[08/23/2024 06:12] saneryee
+run 
+1. `yarn` first, 
+2. `forge build` 
+3. `forge test -vvv`
+
+{Reactions}
+❤️ 
+
+[08/23/2024 08:35] valerid
+Add the remappings under the default profile, not above it
+
+{Reactions}
+❤️ 
+
+[08/23/2024 12:00] tim_peng.
+this should be obvious to most people, but just to make sure it would be user friendly for starters. the git 2024-08-phi command should be cd 2024-08-phi instead
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/image-9ED20.png
+
+{Reactions}
+👍 
+
+[08/23/2024 14:18] strapontin
+The readme also talks about gas efficiency but there is no gas pool. Am I missing something
+
+
+[08/23/2024 15:17] kartoonjoy
+🤖 **Documentation bot assistance:** For general questions about the codebase, give our documentation bot a try, by tagging `@Docs Wolf` in any in any __thread (private or public)__ and asking your question. The bot will make its best attempt to answer based on the codebase and documentation, and link you to relevant resources.
+
+
+[08/24/2024 01:55] jayeshshukla.
+https://docs.google.com/spreadsheets/d/1jPOYfa3o-1b0qQcpq-JtsD8mDq6oaJvXRS007JEIm0E/edit?gid=0#gid=0
+
+Hi @ZaK3939 , @oji3 , @Kashi  and @shugo   
+we dont have access to the above url
+
+{Reactions}
+👍 
+
+[08/24/2024 05:30] jayeshshukla.
+Hi also could you please check the private thread !!!
+
+
+[08/24/2024 11:58] tim_peng.
+Started a thread.
+
+
+[08/24/2024 14:45] valenz1
+Hi, does anyone know how to fix this?
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/image-BE956.png
+
+
+[08/24/2024 14:45] valenz1
+i also had this in another contest and they told me to do some installation, but im not sure what to do here
+
+
+[08/24/2024 14:46] .justuzair
+probably an issue related to remapping
+
+
+[08/24/2024 14:46] .justuzair
+not sure tho
+
+
+[08/24/2024 14:48] .justuzair
+make sure that you have installed the packages correctly
+
+
+[08/24/2024 14:48] .justuzair
+refer to the readme file for the steps
+
+
+[08/24/2024 14:48] valenz1
+okay
+
+
+[08/24/2024 14:51] valenz1
+im not sure what this means
+
+
+[08/24/2024 14:51] 0xsorrynotsorry
+it seems like the path is referred by an incorrect slash `\` should be  `/` in @prb/test\src/PRBTest.sol ?
+
+
+[08/24/2024 14:51] valenz1
+yeah
+
+
+[08/24/2024 14:51] valenz1
+but like how to fix it
+
+
+[08/24/2024 14:51] .justuzair
+how did you install foundry and all the other packages??
+
+
+[08/24/2024 14:51] valenz1
+forge install?
+
+
+[08/24/2024 14:51] .justuzair
+```
+git clone --recurse https://github.com/code-423n4/2024-08-phi.git
+git 2024-08-phi
+git submodule update --init --recursive
+bun install
+forge test -vvv
+```
+
+
+[08/24/2024 14:51] valenz1
+i just did whatever that was told in the readme
+
+
+[08/24/2024 14:51] valenz1
+yea
+
+
+[08/24/2024 14:52] valenz1
+i cant do bun
+
+
+[08/24/2024 14:52] .justuzair
+Try this @Valenz
+
+
+[08/24/2024 14:52] .justuzair
+use npm
+
+
+[08/24/2024 14:52] valenz1
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/image-C0A7F.png
+
+
+[08/24/2024 14:52] .justuzair
+you can also run bun if you are using wsl
+
+
+[08/24/2024 14:52] valenz1
+im not using wsl
+
+
+[08/24/2024 14:52] .justuzair
+you are missing nodejs, hence missing npm
+
+
+[08/24/2024 14:52] .justuzair
+then you can use npm, search the internet on how to install npm
+
+
+[08/24/2024 14:53] .justuzair
+you can either install nodejs directly or use nvs (node versioning system) for npm
+
+
+[08/24/2024 14:53] .justuzair
+refer to this 
+
+https://stackoverflow.com/questions/16000173/install-npm-node-js-package-manager-on-windows-w-o-using-node-js-msi
+
+{Embed}
+https://stackoverflow.com/questions/16000173/install-npm-node-js-package-manager-on-windows-w-o-using-node-js-msi
+Install npm (Node.js Package Manager) on Windows (w/o using Node.js...
+The problem: while using nvm to install Node.js I was able to install the version of Node.js I need, but nvm does not install npm automatically. NPM's page provides no information about installing ...
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/apple-touch-icon%402-C50E4.png
+
+
+[08/24/2024 14:54] 0xsorrynotsorry
+you can manually correct the slash
+
+
+[08/24/2024 14:54] valenz1
+ok thx
+
+
+[08/24/2024 14:54] valenz1
+where
+
+
+[08/24/2024 14:59] .justuzair
+i think your issue should be solved if you install everything correctly
+
+
+[08/24/2024 14:59] .justuzair
+i just cloned and tested the repo today morning
+
+
+[08/24/2024 15:19] codecop_
+@Docs Wolf 
+when I mint an art, i call claim() inside PhiFactory, internally during state updates, the credMinted and artMinted state gets updated.
+artMinted makes sense, why do we have credMitnted? 
+Do we mint cred?
+
+
+[08/24/2024 15:38] valenz1
+r u a windows user
+
+
+[08/24/2024 15:40] waydoum
+the slash problem is normal cause you're a windows user, when you get this error you either need to fix your remappings or install what's missing
+
+
+[08/24/2024 15:41] waydoum
+did you install node_modules ?
+
+
+[08/24/2024 15:44] valenz1
+nope
+
+
+[08/24/2024 15:44] valenz1
+is it the node js thing?
+
+
+[08/24/2024 15:45] waydoum
+dude just run bun install and it'll fix
+
+
+[08/24/2024 15:45] valenz1
+i cant run bun install
+
+
+[08/24/2024 15:45] waydoum
+install what's missing you can't expect it to work
+
+
+[08/24/2024 15:45] waydoum
+why not ?
+
+
+[08/24/2024 15:45] valenz1
+yea but what is it?
+
+
+[08/24/2024 15:46] valenz1
+what makes bun unable to be run
+
+
+[08/24/2024 15:46] waydoum
+what's the error, I'm pretty sure you just need to search for it online
+
+
+[08/24/2024 15:47] valenz1
+.
+
+
+[08/24/2024 15:47] waydoum
+I'm talking about bun install what's the error
+
+
+[08/24/2024 15:48] codecop_
+did you use bun to installl the dependencies?
+
+
+[08/24/2024 15:49] valenz1
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/image-6A5DF.png
+
+
+[08/24/2024 15:49] valenz1
+i dont think so
+
+
+[08/24/2024 15:49] valenz1
+i did forge install
+
+
+[08/24/2024 15:49] waydoum
+you need to follow the instructuions, without bun install it won't work
+
+
+[08/24/2024 15:49] codecop_
+delete the caches and node modules and runn `bun install`
+
+
+[08/24/2024 15:49] waydoum
+dude you wrote bum, instead of bun
+
+
+[08/24/2024 15:49] valenz1
+oh wait
+
+
+[08/24/2024 15:50] valenz1
+
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/image-C9E20.png
+
+
+[08/24/2024 15:50] codecop_
+this should solve @Valenz
+
+
+[08/24/2024 15:50] valenz1
+where is it
+
+
+[08/24/2024 15:50] valenz1
+wait lemme search
+
+
+[08/24/2024 15:51] codecop_
+delete lib folder, node modules folder
+
+
+[08/24/2024 15:51] codecop_
+you should find it in the root directory already
+
+
+[08/24/2024 15:52] valenz1
+there is no node modules
+
+
+[08/24/2024 15:53] codecop_
+see you can find node_modules folder in the path: 2024-08-phi/node_modules
+
+
+[08/24/2024 15:54] codecop_
+also you should have bun installed, if you don't have refer to google and install bun
+
+
+[08/24/2024 15:54] .justuzair
+yessur
+
+
+[08/24/2024 15:54] .justuzair
+bro install nodejs, it has npm installed, instead of bun use npm
+
+
+[08/24/2024 15:54] .justuzair
+bun is there on linux, mac and wsl
+
+
+[08/24/2024 15:54] codecop_
+Started a thread.
+
+
+[08/24/2024 15:55] .justuzair
+it wont run in windows
+
+
+[08/24/2024 15:55] .justuzair
+use npm instead
+
+
+[08/24/2024 15:55] valenz1
+yea i was just listening to him
+
+
+[08/24/2024 15:55] valenz1
+im trying to install, but uh
+
+
+[08/24/2024 15:55] valenz1
+the web is kinda confusing xD
+
+
+[08/24/2024 15:55] codecop_
+can anybody help me on this??
+
+
+[08/24/2024 16:00] .justuzair
+🙂
+
+
+[08/24/2024 16:16] waydoum
+for your last question to the bot ERC1155 have one contract who got all nfts not every nft has it's own address
+
+
+[08/24/2024 16:17] codecop_
+so that means that when i create a new art inside a cred which already has an art, i won't be technically creating a new NFT?
+
+
+[08/24/2024 16:17] codecop_
+not unique then i suppose
+
+
+[08/24/2024 16:18] waydoum
+The distinctive feature of ERC1155 is that it uses a single smart contract to represent multiple tokens at once. This is why its balanceOf function differs from ERC20’s and ERC777’s: it has an additional id argument for the identifier of the token that you want to query the balance of.
+
+
+[08/24/2024 16:19] codecop_
+Oh i see, didn't have much background of ERC1155 so got stuck here. I thought that just like ERC721 it deploys a new contract whenever an art is created. Thanks @Waydou
+
+
+[08/24/2024 16:19] waydoum
+Anytime
+
+{Reactions}
+👍 
+
+[08/24/2024 16:20] waydoum
+I'm still bit confused about aspects of the code too lol
+
+
+[08/24/2024 16:20] codecop_
+which part. @Waydou ?
+
+
+[08/24/2024 16:20] .justuzair
+I do not have high hopes, the codebase is already audited by Renesance Labs
+
+
+[08/24/2024 16:20] .justuzair
+I got time so why not
+
+
+[08/24/2024 16:20] .justuzair
+🙂
+
+
+[08/24/2024 16:22] waydoum
+I didn't see their report yet but yeah why not
+
+{Reactions}
+🤝 
+
+[08/24/2024 16:22] waydoum
+I still need to wrap my head about the maxsupply for each PhiArt
+
+
+[08/24/2024 16:24] codecop_
+its unlimited by default as per my research, you can edit it though or can set it while creating an art inside advanced settings @Waydou
+
+{Reactions}
+👍 
+
+[08/24/2024 16:36] guy_in0xnito
+Started a thread.
+
+
+[08/25/2024 00:19] codecop_
+Who determines the maxPrice when a share is bought? It is given as input as i can see. How does it vary with the actual price each time a share is bought?
+
+
+[08/25/2024 06:24] tim_peng.
+Started a thread.
+
+
+[08/25/2024 07:45] waydoum
+this is the maxPrice the buying person is willing to pay, it's for slippage protection I feel
+
+
+[08/25/2024 07:45] waydoum
+I may be wrong, I would love if the team can clarify
+
+
+[08/25/2024 07:46] villy9172
+Yeah, front running with large amounts to change the price of the shares, that's why projects use max and min price
+
+
+[08/25/2024 07:46] villy9172
+Great chance that they've done it for this specifically that you said, @Waydou
+
+{Reactions}
+👍 
+
+[08/25/2024 09:08] pro_king1
+is there any difference between Creator and Artist?
+
+
+[08/25/2024 09:12] villy9172
+Creator is the one which is initiating the indexing of blockchain data to be made into a credential, the artist is the only creating the art, both combined create the unique nft as far as I understand
+
+{Reactions}
+👍 
+
+[08/25/2024 09:23] villy9172
+But what I do not understand is the following, is the credential and art in a one to one relationship or many to one || one to many @ZaK3939 ?
+
+
+[08/25/2024 09:24] zak3939
+u can see our demo for audit https://base-sepolia.terminal.phiprotocol.xyz/cred/1
+
+{Embed}
+https://base-sepolia.terminal.phiprotocol.xyz/cred/1
+Phi Protocol
+A decentralized identity layer for web3, empowering people to express their on-chain identity.
+
+{Reactions}
+🆗 
+
+[08/25/2024 09:26] zak3939
+this cred has several chains arts to 1 cred.
+
+
+[08/25/2024 09:27] villy9172
+1 cred can be linked to multiple arts, okay
+
+{Reactions}
+👍 (2) 
+
+[08/25/2024 09:30] zak3939
+yes like this
+
+{Attachments}
+Code4rena - ARCHIVE-PUBLIC - phi-aug22 [1273806655422992406].txt_Files/Phi_Protocol-B01CB.png
+
+{Reactions}
+🆗 
+
+[08/25/2024 19:34] cybrid6924
+bun install v1.1.26 (0a37423b)
+  🔍 Resolving... 
+
+hi Guys, running bun install is just stucked here for hours..
+any idea why?
+
+
+[08/26/2024 06:29] p2m8
+hello, I am struggling to understand the difference between arts and creds
+
+
+[08/26/2024 06:35] p2m8
+are users able to buy and sell arts independently to buying and selling creds?
+
+
+[08/26/2024 17:37] waydoum
+yes
+
+
+[08/27/2024 05:58] nadir_khan_sec
+Some Qs:
+a) Why do some of the abstract contracts contain fully implemented functions?
+b) can you provide more context on RewardControl and how it interacts with the other main contracts?
+Thanks
+
+
+[08/27/2024 10:57] nadir_khan_sec
+to ask a question in a private thread, do I just DM one of the four protocol Devs?
+
+
+[08/27/2024 11:05] mctoady
+On the left hand side of the text box on here theres a :plus: symbol, click that and you'll see "create thread", theres a tick box to make it private, then only the people you @ in that thread (the protocol Devs) will be able to see it
+
+{Reactions}
+😸 thankyou 
+
+[08/27/2024 12:10] tim_peng.
+Started a thread.
+
+
+[08/27/2024 13:19] cybrid6924
+Hi guys,
+So i had issue installing with bun, it does not work just stucked at 
+Resolving.....
+
+and then i tried copying the src files to a new fundry project and installed the dependencies using forge,
+
+now i am writing my fuzz test in the new pseudo project, i need to enable via-ir cos of stack too deep error, and then i keep having issues again with via-ir.
+
+
+[08/27/2024 13:20] cybrid6924
+Anyone with a solution please
+
+
+[08/27/2024 21:01] mansa11
+What OS?
+
+
+[08/28/2024 07:31] nadir_khan_sec
+thanks !
+
+{Reactions}
+prayge (2) 
+
+[08/28/2024 07:45] nadir_khan_sec
+Started a thread.
+
+
+[08/28/2024 08:08] zak3939
+There is no report on the processing around BATCH fucntions (claim, share), so if you don't mind, I hope someone will focus on that.
+
+{Reactions}
+✅ 
+
+[08/28/2024 17:45] ivanfitro
+for what are used the royalties in PhiNFT1155.sol? i didnt see in any place the code uses it
+
+
+[08/28/2024 18:09] waydoum
+@ZaK3939
+
+
+[08/28/2024 18:38] zak3939
+pls check EIP2981
+
+{Reactions}
+👍 
+
+[08/29/2024 07:06] saneryee
+Started a thread.
+
+
+[08/29/2024 07:42] 0xstriker
+Started a thread.
+
+
+[08/29/2024 08:06] monstitude
+Is it safe to talk about a potential vulnerability with docs wolf in a private thread?
+
+
+[08/29/2024 08:56] mctoady
+Have we reached AGI yet? docs wolf might register as a warden and steal your glory 👀
+
+{Reactions}
+😂 (8) 🥲 
+
+[08/29/2024 11:16] kartoonjoy
+Docs wolf isn't a chat bot. You can ask specific questions that can be uncovered by the docs. More advanced questions can be asked of the sponsor.
+
+If you want a private thread, dont forget to check that box.
+
+
+[08/29/2024 11:17] monstitude
+thank you
+
+{Reactions}
+hi5 (2) 
+
+[08/29/2024 16:49] ivanfitro
+ok i see the EIP2981 but the `initializeRoyalties()`  is initialized and the owner can `updateRoyalties()` but that's it, the code not uses the royalties for nothing if understand correct the code
+
+
+[08/29/2024 17:04] zak3939
+yes. 2981 is used by marketplace
+
+
+[08/29/2024 17:22] ivanfitro
+like opensea you mean?
+
+
+[08/29/2024 17:42] zak3939
+yes, sudoswap/opensea
+
+{Reactions}
+👍 
+
+[08/30/2024 04:48] izuman
+Does Docs Wolf work in private threads?
+
+
+[08/30/2024 04:52] dot_cloud
+I tried a couple of minutes ago, still no reply from Docs Wolf
+
+
+[08/30/2024 04:54] izuman
+Ya, same here
+
+
+[08/30/2024 05:20] tigerfrake
+Bruh on vacation, lol
+
+
+[08/30/2024 06:27] pfapostol
+it works for me.
+
+
+[08/30/2024 07:05] samuselderg
+@IzuMan @farismaulana sorry there was some downtime with the docs bot but its back online now, ask away! 🙏
+
+{Reactions}
+👍 (2) 
+
+[08/30/2024 14:16] izuman
+What is the purpose of the SHARE_LOCK_PERIOD?
+
+
+[08/30/2024 14:23] mctoady
+Believe it is essentially a flash loan protection, to stop someone buying then selling a share in the same block
+
+
+[08/30/2024 14:25] izuman
+Ah, I am just wondering why they would need protection against that.
+
+
+[08/30/2024 14:36] mctoady
+I believe in the original audit report it was pointed out a user could buy cred shares/claim the curator rewards/then sell in one tx, this makes that less appealing as they have to hold onto the cred shares for at least 10 minutes
+
+
+[08/30/2024 14:37] izuman
+Thanks for the reply, I need to read the previous audits.
+
+{Reactions}
+🫡 
+
+[08/31/2024 05:58] pro_king1
+creating of a new Cred wants some ETH or not?
+
+
+[08/31/2024 10:57] pro_king1
+@ZaK3939
+
+
+[08/31/2024 11:58] nikolap2015
+You need to send eth, equal to the price of the first share
+
+
+[08/31/2024 14:14] codecop_
+@Docs Wolf What is soul bounded?
+
+
+[08/31/2024 14:27] waydoum
+souldbound is to see of the minted nfts are transferable or no
+
+
+[08/31/2024 14:27] waydoum
+they're just ERC1155
+
+
+[08/31/2024 14:28] waydoum
+I'm done with this contest, good luck everyone
+
+{Reactions}
+❤️ (2) 
+
+[08/31/2024 15:21] kartoonjoy
+FYI. You'll want to initiate the docs wolf in a thread.
+
+{Reactions}
+👍 hi5 
+
+[09/01/2024 11:05] pfapostol
+Is it correct to assume that the `signedData_` parameter in `Cred.createCred`, `Cred.updateCred` and `PhiFactory.createArt` is always trusted (checked on the backend) and any bugs caused by an invalid `signedData_` parameter are invalid, or not?
+
+
+[09/01/2024 11:14] crisscsc
+Heya, is there a video available for the beginning of the competitive audit ?
+
+
+[09/01/2024 12:41] kartoonjoy
+Not for this audit.
+
+{Reactions}
+🙏 
+
+[09/01/2024 17:32] golomp3761
+Hello Boys and girls could you tell me what is a purpose of using art.endTime in PjiFactory.sol contract?
+
+
+[09/01/2024 18:38] avoloder
+To tell for how long the minting of that art will be possible
+
+
+[09/01/2024 18:49] golomp3761
+Thank you sir!!! what is a difference between art and creds? What is a creds?
+
+
+[09/01/2024 19:00] crisscsc
+Thank you
+
+{Reactions}
+hi5 (2) 
+
+[09/01/2024 19:06] crisscsc
+Started a thread.
+
+
+[09/02/2024 07:55] preslaven
+use `npm install` instead
+
+
+[09/02/2024 07:55] preslaven
+instead of `bun install`
+
+
+[09/02/2024 14:36] chonkov
+What is the `protocolFeeDestination`? Is it a contract or just an EOA? What is the purpose of this function inside the `PhiFactory.sol` contract: ```
+function withdraw() external onlyOwner {
+  protocolFeeDestination.safeTransferETH(address(this).balance);
+}```
+
+
+[09/02/2024 14:51] samuselderg
+Started a thread.
+
+
+[09/02/2024 17:34] chonkov
+Can someone further explain this known issue: `6. Solady ECDSA.recover(), which does not reject malleable signature. For this issue, we use expiresIn`. Does it mean that it is fixed due to the use of `expiresIn` or I am misinterpreting it?
+
+
+[09/03/2024 11:59] chonkov
+What is supposed to be the difference between - `claim(...)/merkleClaim(...)` and `claim(...)/signatureClaim(...)` inside the `PhiFactory` contract?
+
+
+[09/03/2024 12:32] izuman
+They are different forms of verifying if a user is allowed to mint one is through a signature and the second is through a merkle tree proof
+
+
+[09/03/2024 12:52] chonkov
+Ok, but a user should be able to mint one through both using `claim()` and `merkleClaim()` right? It should be sort of a preference on they part
+
+
+[09/03/2024 13:12] izuman
+Depends on how the art was setup and if they uploaded a credMerkleRootHash otherwise they can use signatureClaim with a signed signature
+
+
+[09/03/2024 13:34] chonkov
+Ok, got it. Let’s say they use merkle roots for verification. The user should be able to claim their nft by either calling claim or merkleClaim and it shouldn’t make a difference right?
+
+
+[09/03/2024 13:51] izuman
+Correct you can claim through claim and merkleClaim
+
+{Reactions}
+👍 (3) 
+
+[09/03/2024 16:01] evokid
+This one is very tough in some interesting context, it's flexible Defi, sometimes digging deep into a part but then there is a protection. Happy to submit my issues finally. 🙏
+
+
+[09/03/2024 20:02] C4
+**🚨 AUDIT ALERT**
+
+@🐺Wardens  The **Phi** audit is now closed! Huge thanks to everyone who participated 🔍, whether you submitted a finding or not.
+
+What's next: The sponsor team and judge will review the findings over the next couple of weeks. Feel free to ping a Civics-Admin if you have questions along the way!
+
+
+[09/04/2024 03:47] svetborislavov
+Submissions count?
+
+
+[09/04/2024 04:25] tamayonft
+700
+
+{Reactions}
+😅 (7) 🥺 🤪 
+
+[09/04/2024 09:15] nadir_khan_sec
+how long does it usually take to release results?
+
+
+[09/04/2024 12:02] ivanfitro
+If the issue is in the validation repo it means that is invalid?
+
+
+[09/04/2024 12:12] ali_shehab.
+no
+
+{Reactions}
+👍 
+
+[09/04/2024 13:39] m3taldrag0n
+What does it mean if an issue is in the Findings repo? Does it mean it has already been checked by a triager and marked as a valid issue, or something else?
+
+
+[09/04/2024 13:48] kuprumion
+It means satisfactory; read here: https://docs.code4rena.com/roles/judges/how-to-judge-a-contest
+
+{Embed}
+https://docs.code4rena.com/roles/judges/how-to-judge-a-contest
+How to judge an audit | Code4rena
+
+
+[09/04/2024 16:14] waydoum
+where do you see the findings repo?
+
+
+[09/07/2024 11:22] ivanfitro
+only the wardens with SR can see it
+
+{Reactions}
+🙏 (2) 
+
+[09/08/2024 14:20] waydoum
+thank you for your answer
+
+
+[09/08/2024 14:20] waydoum
+can anyone update us on how the judging is going?
+
+{Reactions}
+🚫 (4) 
+
+[09/13/2024 03:17] tamayonft
+1 month more bro
+
+{Reactions}
+🙈 
+
+[09/13/2024 03:21] izuman
+During the judgement process is the submitter known or only revealed at the end?
+
+
+[09/13/2024 03:38] .nnez
+It's known prior
+
+
+[09/13/2024 04:48] izuman
+Got it, thanks🙏
+
+
+[09/14/2024 19:57] avoloder
+How the judging is going? Can someone with the SR role give us some update 🙃
+
+
+[09/15/2024 21:42] brivan
+PJQA started yesterday
+
+{Reactions}
+👍 (2) 🙏🏼 
+
+[09/16/2024 02:06] yoona_yay_80694
+are there alot of dups like traitforge or are rewards looking promising? 🙃
+
+
+[09/16/2024 06:16] avoloder
+Thank you
+
+
+[09/16/2024 12:45] gregomaspero
+what is the "Post Judging Quality Assurance" phase? are we (Wardens) open to see the validated issues list or how does it work?
+
+
+[09/16/2024 12:47] unnamedeth.lens
+only wardens with SR role can see the issues
+
+{Reactions}
+👍 
+
+[09/16/2024 13:00] gregomaspero
+ok thanks! And how does the roadmap looks like for the next steps? I saw there is an appealing phase at some point in case the judges missed a valid issue. Is this the next phase and going to be open to all Wardens?
+
+
+[09/16/2024 13:03] unnamedeth.lens
+no there is nothing for wardens you need the SR role to escalate
+
+
+[09/16/2024 13:05] gregomaspero
+You mean that the appealing process is being done right now, but only SR Wardens can appeal?
+
+
+[09/16/2024 13:06] unnamedeth.lens
+i dont have the role
+
+{Reactions}
+👍 (2) 
+
+[09/16/2024 13:11] pfapostol
+yes
+
+{Reactions}
+🫡 (2) 
+
+[09/18/2024 15:42] yoona_yay_80694
+has PJQA ended?
+
+
+[09/18/2024 16:09] kuprumion
+yep; I guess it's a few more days left
+
+
+[09/22/2024 13:33] _bzee.
+Anyone with link to validation repo
+
+
+[09/22/2024 14:04] svetborislavov
+Wen results
+
+
+[09/22/2024 18:05] tamayonft
+The qa is not resolved compkety  yet
+
+{Reactions}
+thankyou (5) 
+
+[09/23/2024 12:08] codecop_
+how much time more?
+
+{Reactions}
+this (4) 
+
+[09/24/2024 02:58] tamayonft
+Probably like one week more
+
+{Reactions}
+thisisfine (4) 
+
+[09/25/2024 12:32] viniciuscoassis
+why is it taking so long? Does the fact that it relies on off-chain processing influence this? In the judgment?
+
+
+[09/25/2024 12:50] yoona_yay_80694
+are SRs still able to submit new escalations or isit only for resolution now?
+
+
+[09/25/2024 13:05] amarfares
+Results should be out in next 1-2 days I think
+
+
+[09/25/2024 13:09] viniciuscoassis
+great, was just wondering about the reason
+
+
+[09/25/2024 13:11] amarfares
+It's been ~3 weeks since contest ended, so it's pretty standard, wouldn't say it's considered long
+
+{Reactions}
+🫡 (2) 
+
+[09/25/2024 13:13] unnamedeth.lens
+@bumble.c  you should try other platforms 😂😂
+
+
+[09/25/2024 13:17] viniciuscoassis
+yeah, you’re right. I’m just being a bit hasty
+
+
+[09/25/2024 19:23] mctoady
+👀
+
+{Reactions}
+👀 (3) 🎉 (2) 
+
+[09/25/2024 19:24] thebrittfactor
+🤑 🎉  Awards for **Phi**:
+
+$13,796.06 USDC » @MrPotatoMagic 
+$2,635.66 USDC » @petarP1998 
+$1,435.04 USDC » @kuprum 
+$1,160.51 USDC » @McToady 
+$1,021.68 USDC » @rbserver 
+$938.08 USDC » @evokid 
+$332.11 USDC » @CAUsr 
+$313.53 USDC » @rscodes 
+$312.07 USDC » @0xCiphky 
+$287.53 USDC » @0xNirix 
+$230.04 USDC » @valkvalue 
+$224.12 USDC » 20centclub (@tpiliposian, @M3talDrag0n and @Skylice) 
+$218.08 USDC » @huwg 
+$191.37 USDC » @gregomaspero 
+$171.69 USDC » @hail_the_lord 
+$133.05 USDC » DigiSafe (@corporalking and @Svetoslavb) 
+$115.50 USDC » @Gosho 
+$98.76 USDC » @Rhaydden 
+$98.76 USDC » @... 
+$96.86 USDC » OpaBatyo (@amar and @armormadeofwoe) 
+$60.38 USDC » @Jorgect 
+$59.42 USDC » @pipidu83 
+$54.61 USDC » @Villy 
+$44.41 USDC » @pep7siup 
+$42.17 USDC » @irondevx 
+$42.05 USDC » NexusAudits (@cheatc0d3 and @zanna) 
+$41.86 USDC » @0xBeastBoy 
+$41.86 USDC » @Trooper 
+$41.86 USDC » @eierina 
+$38.68 USDC » @joicygiore 
+$38.16 USDC » @Tigerfrake 
+$38.03 USDC » @trtrth 
+$37.57 USDC » @federodes 
+$35.06 USDC » @Soumen 
+$33.27 USDC » @0xrafaelnicolau 
+$30.12 USDC » @typicalHuman 
+$29.16 USDC » @Decap 
+$26.95 USDC » @0xrex 
+$25.60 USDC » @WillyCode20 
+$24.98 USDC » @Ruhum 
+$21.42 USDC » @Sparrow 
+$21.42 USDC » @Enami_El 
+$21.07 USDC » @kn0t
+
+{Reactions}
+🔥 (6) 🚀 (2) 
+
+[09/25/2024 19:25] thebrittfactor
+$17.56 USDC » @DanielArmstrong 
+$17.56 USDC » @robertodf99 
+$17.25 USDC » @0xmuxyz 
+$17.25 USDC » @Rare_one 
+$15.83 USDC » @0xBugSlayer 
+$13.05 USDC » @eLSeR17 
+$12.56 USDC » @Beosin 
+$12.56 USDC » @dimah7 
+$9.64 USDC » @KupiaSec 
+$9.64 USDC » @pfapostol 
+$9.46 USDC » @aldarion 
+$9.46 USDC » @farismaulana 
+$9.34 USDC » @JanuaryPersimmon2024 
+$9.34 USDC » @lu1gi 
+$9.15 USDC » @Agontuk 
+$9.15 USDC » @IzuMan 
+$9.15 USDC » @testjjjj 
+$4.49 USDC » @13u9 
+$4.49 USDC » @ikkun_1011 
+$4.36 USDC » EaglesSecurity (@kane-goldmisth and @julian_avantgarde) 
+$4.36 USDC » @Waydou 
+$4.18 USDC » @Kaysoft 
+$4.18 USDC » @biakia 
+$0.49 USDC » @0xAkira 
+$0.49 USDC » @avoloder 
+$0.49 USDC » @_luqu1nh4x_ 
+$0.31 USDC » @Fitro 
+$0.31 USDC » @jesusrod15 
+$0.19 USDC » @0xkaox 
+$0.19 USDC » @10ap17 
+$0.19 USDC » @41uve12 
+$0.19 USDC » @nadir_khan_sec 
+$0.19 USDC » @CodeCop 
+$0.19 USDC » @Falendar 
+$0.19 USDC » @inspecktor 
+$0.19 USDC » @JustUzair 
+$0.19 USDC » @Monstitude 
+$0.19 USDC » @BRUTAL 
+$0.19 USDC » @Taiger 
+$0.19 USDC » @TopStar 
+$0.19 USDC » @debo 
+$0.19 USDC » @mjcpwns 
+$0.19 USDC » @nikolap 
+$0.19 USDC » @sweetbluesugarlatte 
+$0.19 USDC » @Tim_Peng 
+$0.19 USDC » @chaosSR 
+
+🏁 Findings summary
+--------------------------------------
+
+{Reactions}
+🔥 (9) 🎉 (5) 
+
+[09/25/2024 19:26] thebrittfactor
+7 High risk findings
+8 Med risk findings
+156 wardens contributed
+
+Top Hunter and Gatherer: MrPotatoMagic
+Top QA report: MrPotatoMagic
+
+Awards will be distributed on Polygon. Congratulations all!  💸 💸 💸
+
+⚠️ Awardees, be sure to review [this announcement](https://discord.com/channels/810916927919620096/810929015509483554/1272625452909072415) and fill in your tax info if you haven't already. This must be completed within 30 days (i.e. before Friday, 25 October 2024 19:30) to receive your award distribution for this audit.
+
+*Note: If you participated in this audit and don’t see your name on this list, please wait until the report is published and the findings repo is made public to check on your submissions.*
+
+
+[09/25/2024 20:23] kuprumion
+Congrats @MrPotatoMagic! 4/7 Highs, 7/8 Mediums: Great work 🔥 And of course congrats to everyone 🎉
+
+{Reactions}
+🔥 (10) 🍀 (2) 
+
+[09/25/2024 22:28] evokid
+Congratulations everyone 🫡
+
+{Reactions}
+❤️ (6) hi5 
+
+[09/26/2024 03:24] 0xshaheen
+Congrats everyone and @McToady 🔥
+
+{Reactions}
+❤️ (2) yay (2) 
+
+[09/26/2024 07:18] mrpotatomagic
+Thanks @kuprum and congratulations everyone, some good findings to learn from in there :thankyou: 🎉
+
+
+[09/26/2024 07:20] mrpotatomagic
+My first win on C4, thanks @ZaK3939 and the team for sponsoring this contest :code4rena:
+
+{Reactions}
+👏 (8) 💜 (6) 🙌 
+
+[09/26/2024 07:27] pro_king1
+can we see report for this one?
+
+
+[09/26/2024 07:32] zak3939
+Dear Code4rena Community, 🌟
+We are truly grateful for exceptional contributions to the Phi project. 🙏
+
+Questions and discussions were not just insightful, but also incredibly enjoyable. The enthusiasm and curiosity you all brought to the table made this experience truly special. 💬✨
+
+Thank you for your invaluable input. You've made a lasting impact on Phi, and we had a great time along the way!
+
+{Reactions}
+💜 (18) 👍 (4) code4rena (4) 
+
+[09/26/2024 07:45] rscodes21
+Congrats everyone!! Phi was a really interesting project to audit 💜. 
+
+Though I will hv some reflections to do regarding the bugs that I personally missed out on 😔, Phi will always remain in a special place in my heart for being my first top 8 finish!! 🩵 💙 Grateful for the opportunity C4 and the sponsors gave, thanks yall 🫡
+
+{Reactions}
+Pepe_Evil (3) 
+
+[09/26/2024 07:47] pro_king1
+@rscodes bro where we can see bugs that are valid?
+
+
+[09/26/2024 07:50] rscodes21
+oh, i cant as well, I meant that i will read them in the future when the report comes out haha
+
+
+[09/26/2024 07:50] pro_king1
+haha Ok bro
+
+
+[09/26/2024 08:02] mctoady
+7HMs is really good work, first of many top 10s for you! 🫡
+
+
+[09/26/2024 08:02] rscodes21
+thankss 🔥
+
+
+[09/26/2024 09:53] __melonwater
+Congrats everyone:10_10:
+
+{Reactions}
+💙 (10) 🫡 
+
+[09/26/2024 13:42] shealtielanz
+Congrats @WillyCode20 💸🚀
+
+{Reactions}
+🫡 
+
+[09/26/2024 16:22] 0xdjango
+Well done everyone 👏 👏
+
+{Reactions}
+💜 (6) 
+
+[09/28/2024 17:49] gbadebos
+Hi @thebrittfactor | C4 Is $0.19 cents correct for an upgraded to high severity? Apologies for having to ask.
+
+
+[09/30/2024 13:08] thebrittfactor
+H-05 was a 42 split, which unfortunately decreases the pot for that finding a fair bit. You should be able to review the [findings.csv](https://code4rena.com/community-resources/findings.csv) resource to see these breakdowns further.
+
+{Reactions}
+✅ (2) 
+
+[09/30/2024 14:04] itsmetechjay
+ℹ️ This channel is pending archive.   As a result, any private threads will be permanently deleted on Friday, 11 October 2024.  Please make sure to grab anything you might need before then.
+
+
+[09/30/2024 14:27] enami_el
+Hello guys, just want to ask you to you have any idea when we will receive the rewards?
+
+
+[10/01/2024 09:54] evokid
+Probably you need to submit your tax information. Check out your C4 account.
+
+
+[10/01/2024 09:56] enami_el
+I already did it.
+
+
+[10/01/2024 17:43] svetborislavov
+have the awards been distributed yet?
+
+
+[10/02/2024 18:07] evokid
+Then just wait until your submission is reviewed. If it is then wait few time the automated system will check you're confirmed and then it sends the rewards.
+
+
+[10/02/2024 18:08] evokid
+I just realized that it might take until Oct 25. I don't think the rewards are distributed yet.
+
+{Reactions}
+❤️ 
+
+[10/02/2024 18:10] enami_el
+Ah ok I see thank you
+
+
+[10/02/2024 20:13] 0xbeastboy
+When can we see the final report?
+
+
+[10/07/2024 12:17] pep7siup_
+payouts were sent yet?
+
+
+[10/09/2024 05:38] mjcpwns
+Hello I checked the report and I submitted a bug that is similar to one of the bugs but I did not even get a dup and I cannot find my issue in the public github repo? Who should I talk to about this. I want to know if it is because of report quality or something else
+
+
+[10/09/2024 06:35] kuprumion
+I totally understand your frustration (I've been in this situation before), but I am afraid there is nothing you can do about it. The only way is to get the Security Researcher (SR) status, and then you can participate in the Post-Judging QA discussions, and let the judge know that you have a valid duplicate.
+
+
+[10/09/2024 06:56] mjcpwns
+Ahhh okkk. This is my first contest so I wanted to know how to improve 😂 . But thanks alot. Hopefully can get there soon.
+
+{Reactions}
+👍 
+
+[10/09/2024 07:03] kuprumion
+yeah... In my first contest I've also lost some valid findings which were simply overlooked. But it's pretty easy: you get some valid ones -> SR -> monitor PJQA. Good luck!
+
+
+[10/09/2024 08:29] __melonwater
+what's your report title?
+
+
+[10/09/2024 11:22] jayeshshukla.
+are the rewards distributed ? 
+
+cuzz I did not receive mine, tqs
+
+
+[10/09/2024 15:18] thebrittfactor
+I believe these are still in progress. Please ensure you've submitted your tax information for the teams review.
+
+{Reactions}
+🤝 
+
+[10/10/2024 22:13] itsmetechjay
+ℹ️ Reminder: this channel will be deleted after 24 hours.
+
+
+[10/11/2024 01:05] jayeshshukla.
+@Jay | C4 @thebrittfactor | C4 I did not receive my rewards, should I be worried, as the channel is about to be deleted ? my tax information is already verified 
+
+tqs
+
+
+[10/11/2024 01:45] itsmetechjay
+We are making our way through any outstanding payments. See discussion here: https://discord.com/channels/810916927919620096/1272625770929586238/1291419357678665820
+
+
+[10/13/2024 11:13] eenae
+Hey colleagues, sorry to bother, but have you seen that all the protocol funds may be drained from the `Cred`'s balance as described with a PoC here https://github.com/code-423n4/2024-08-phi-findings/issues/195 ? 
+I don't see such a risk described in High risk findings selected for report here https://github.com/code-423n4/2024-08-phi-findings/issues?q=is%3Aissue+is%3Aopen+label%3A"3+%28High+Risk%29".
+
+The issue https://github.com/code-423n4/2024-08-phi-findings/issues/195 is marked as a duplicate to https://github.com/code-423n4/2024-08-phi-findings/issues/25 (as I understand). However, I claim that this is a separate issue, since
+a) mitigation presented in #25 won't help, just hinder an attacker's path a bit
+b) impact of #195 is way more huge - entire protocol funds may be stolen, not just some rewards-in-flight
+c) they do share some code path, but only in part
+
+What do you think?
+
+
+==============================================================
+Exported 278 message(s)
+==============================================================
